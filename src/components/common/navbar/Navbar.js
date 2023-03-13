@@ -105,7 +105,7 @@ const Navbar = (props) => {
         <ElevationScroll {...props}>
             <NavbarStyledAppBar component="nav" position="sticky" >
                 <NavbarStyledToolbar disableGutters>
-                    <Link href='/'>
+                    <Link to='/'>
                         <NavbarStyledLogoContainer>
                             <NavbarStyledLogoLetter src={LetterL} alt='logo-letter'/>
                             <Box>

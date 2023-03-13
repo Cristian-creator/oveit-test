@@ -72,14 +72,14 @@ export const EventCardLocation = styled(Box)(({ theme }) => ({
     }
 }));
 
-export const EventCardUserActions = styled(Typography)(({ theme }) => ({
+export const EventCardUserActions = styled(Box)(({ theme }) => ({
     height: '52px',
     paddingLeft: '8px',
     display: 'flex',
     alignItems: 'center',
     borderTop: `1px solid ${theme.palette.darkGrey}`,
     borderBottom: `1px solid ${theme.palette.darkGrey}`,
-    '& > button:nth-child(2)': {
+    '& > button:nth-of-type(2)': {
         marginLeft: '33px',
     },
     '& svg': {
@@ -94,7 +94,7 @@ export const EventCardBuyTickets = styled(Box)(({ theme }) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    '& > button > span': {
+    '& button > span': {
         color: theme.palette.white,
         textTransform: 'initial',
     }
