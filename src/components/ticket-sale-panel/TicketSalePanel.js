@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 const TicketSalePanel = ({ event }) => {
   const { title, date, location, tickets } = event;
   const [order, setOrder] = useState([]);
+  
   const updateOrder = (event) => {
     const { name } = event.target;
     const ticketInOrder = order.filter((ticket) => ticket.name === name);

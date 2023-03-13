@@ -39,12 +39,12 @@ export const EventDetailsInfoContainer = styled(Box)(({ theme }) => ({
     },
 }));
 
-export const EventDetailsInfo = styled(Box)(({ theme }) => ({
+export const EventDetailsInfo = styled(Box)({
     marginTop: '12px',
     '& > div > svg': {
         fontSize: '16px',
     }
-}));
+});
 
 export const EventDetailsDate = styled(EventCardDate)(({ theme }) => ({
     margin: '12px 0px 0px 0px',
@@ -125,8 +125,8 @@ export const EventDetailsUserActions = styled(EventCardUserActions)(({ theme }) 
     },
 }));
 
-export const EventDetailsUserActionLabel = styled(Typography)(({ theme }) => ({
+export const EventDetailsUserActionLabel = styled(Typography)({
     textTransform: 'initial',
     lineHeight: '20px',
-}));
+});
 

@@ -22,7 +22,7 @@ export const EventCardContainer = styled(Grid)(({ theme }) => ({
     marginBottom: '24px',
 }));
 
-export const EventCardImage = styled(Box)(({ theme, image }) => ({
+export const EventCardImage = styled(Box)(({ image }) => ({
     height: '148px',
     backgroundImage: `url(${image})`,
     backgroundSize: 'cover',
@@ -30,20 +30,20 @@ export const EventCardImage = styled(Box)(({ theme, image }) => ({
     backgroundRepeat: 'no-repeat',
 }));
 
-export const EventCardData = styled(Box)(({ theme }) => ({
+export const EventCardData = styled(Box)({
     padding: '16px',
     height: '124px',
-}));
+});
 
-export const EventCardCategory = styled(Typography)(({ theme }) => ({
+export const EventCardCategory = styled(Typography)({
     textTransform: 'uppercase',
-}));
+});
 
-export const EventCardTitle = styled(Typography)(({ theme }) => ({
+export const EventCardTitle = styled(Typography)({
     marginTop: '4px',
     marginBottom: '12px',
     height: '48px',
-}));
+});
 
 export const EventCardDate = styled(Box)(({ theme }) => ({
     display: 'flex',
@@ -101,11 +101,11 @@ export const EventCardBuyTickets = styled(Box)(({ theme }) => ({
     }
 }));
 
-export const EventCardBTicketsRange = styled(Box)(({ theme }) => ({
+export const EventCardBTicketsRange = styled(Box)({
     display: 'flex',
     alignItems: 'center',
     '& > svg': {
         fontSize: '16px',
         marginRight: '10px',
     },
-}));
+});

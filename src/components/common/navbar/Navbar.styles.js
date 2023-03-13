@@ -7,14 +7,14 @@ export const NavbarStyledAppBar = styled(AppBar)(({ theme }) => ({
   boxShadow: theme.palette.boxShadow,
 }));
 
-export const NavbarStyledToolbar = styled(Toolbar)(({ theme }) => ({
+export const NavbarStyledToolbar = styled(Toolbar)({
   width: '100%',
   maxWidth: '1440px',
   margin: '0 auto',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-}));
+});
 
 export const NavbarStyledLogoContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -25,9 +25,9 @@ export const NavbarStyledLogoContainer = styled(Box)(({ theme }) => ({
   }
 }));
 
-export const NavbarStyledLogoLetter = styled('img')(({ theme }) => ({
+export const NavbarStyledLogoLetter = styled('img')({
   paddingRight: '2px',
-}));
+});
 
 export const NavbarStyledList = styled(List)(({ theme }) => ({
   height: '100%',
@@ -51,17 +51,17 @@ export const NavbarStyledListItem = styled(ListItem)(({ theme }) => ({
   }
 }));
 
-export const NavbarStyledListItemText = styled(Typography)(({ theme }) => ({
+export const NavbarStyledListItemText = styled(Typography)({
   width: 'max-content',
-}));
+});
 
-export const NavbarStyledSelect = styled(Select)(({ theme }) => ({
+export const NavbarStyledSelect = styled(Select)({
   width: '100px',
   textAlign: 'center',
   '#language-switcher': {
     backgroundColor: 'transparent',
   },
-}));
+});
 
 export const NavbarStyledMenuIcon = styled(Menu)(({ theme }) => ({
   color: theme.palette.darkBlue,
