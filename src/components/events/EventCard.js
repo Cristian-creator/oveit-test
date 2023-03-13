@@ -3,6 +3,7 @@ import { Button, Typography } from '@mui/material'
 import { CalendarTodayOutlined, LocationOnOutlined, ShareOutlined, FavoriteBorder, ConfirmationNumberOutlined } from '@mui/icons-material';
 import { EventCardBTicketsRange, EventCardBuyTickets, EventCardCategory, EventCardContainer, EventCardData, EventCardDate, EventCardImage, EventCardLocation, EventCardTitle, EventCardUserActions } from './EventCard.styles';
 import { Link } from 'react-router-dom';
+import { EventDetailsUserActionLabel } from './EventDetails.styles';
 
 const EventCard = ({ id, image, category, title, date, location, cheapestTicket, theMostExpensiveTicket }) => {
   return (
@@ -25,11 +26,11 @@ const EventCard = ({ id, image, category, title, date, location, cheapestTicket,
       <EventCardUserActions>
         <Button>
           <ShareOutlined />
-          <Typography variant="body1"> Share </Typography>
+          <EventDetailsUserActionLabel variant="body1"> Share </EventDetailsUserActionLabel>
         </Button>
         <Button>
           <FavoriteBorder />
-          <Typography variant="body1"> Like </Typography>
+          <EventDetailsUserActionLabel variant="body1"> Like </EventDetailsUserActionLabel>
         </Button>
       </EventCardUserActions>
       <EventCardBuyTickets>

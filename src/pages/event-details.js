@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import AboutVendor from '../components/about-vendor/AboutVendor';
 import { SectionContainer, SectionTitle } from '../components/common/styled-components/StyledComponents.styles';
 import { EventCardBTicketsRange } from '../components/events/EventCard.styles';
-import { EventDetailsBottom, EventDetailsBuyTickets, EventDetailsContainer, EventDetailsDate, EventDetailsDescription, EventDetailsImage, EventDetailsInfo, EventDetailsInfoContainer, EventDetailsLocation, EventDetailsUserActions } from '../components/events/EventDetails.styles';
+import { EventDetailsBottom, EventDetailsBuyTickets, EventDetailsContainer, EventDetailsDate, EventDetailsDescription, EventDetailsImage, EventDetailsInfo, EventDetailsInfoContainer, EventDetailsLocation, EventDetailsUserActionLabel, EventDetailsUserActions } from '../components/events/EventDetails.styles';
 import { eventsContext } from '../context';
 
 import presentationImage from '../images/event-details/presentation-image.png';
@@ -51,11 +51,11 @@ const EventDetails = () => {
               <EventDetailsUserActions>
                 <Button>
                   <ShareOutlined />
-                  <Typography variant="body1"> Share </Typography>
+                  <EventDetailsUserActionLabel variant="body1"> Share </EventDetailsUserActionLabel>
                 </Button>
                 <Button>
                   <FavoriteBorder />
-                  <Typography variant="body1"> Like </Typography>
+                  <EventDetailsUserActionLabel variant="body1"> Like </EventDetailsUserActionLabel>
                 </Button>
               </EventDetailsUserActions>
             </EventDetailsBottom>

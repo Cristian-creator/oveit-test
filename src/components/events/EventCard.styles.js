@@ -97,6 +97,7 @@ export const EventCardBuyTickets = styled(Box)(({ theme }) => ({
     '& button > span': {
         color: theme.palette.white,
         textTransform: 'initial',
+        lineHeight: '20px',
     }
 }));
 
@@ -105,6 +106,6 @@ export const EventCardBTicketsRange = styled(Box)(({ theme }) => ({
     alignItems: 'center',
     '& > svg': {
         fontSize: '16px',
-        marginRight: '12px',
+        marginRight: '10px',
     },
 }));

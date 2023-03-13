@@ -52,7 +52,7 @@ export const EventDetailsDate = styled(EventCardDate)(({ theme }) => ({
         color: theme.palette.neutralGrey,
     },
     [theme.breakpoints.up('md')]: {
-        marginTop: '16px 0px 0px 0px',
+        margin: '16px 0px 0px 0px',
     },
 }));
 
@@ -123,5 +123,10 @@ export const EventDetailsUserActions = styled(EventCardUserActions)(({ theme }) 
         marginTop: '0px',
         width: 'auto',
     },
+}));
+
+export const EventDetailsUserActionLabel = styled(Typography)(({ theme }) => ({
+    textTransform: 'initial',
+    lineHeight: '20px',
 }));
 

@@ -3,7 +3,7 @@ import { MenuItem, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import { EventCardDate, EventCardLocation } from '../events/EventCard.styles';
-import { TicketSaleAddons, TicketSaleAddonsHeader, TicketSaleAddonsHeaderTitle, TicketSaleAddonsIncluded, TicketSaleAddonsIncludedLabel, TicketSaleAddonsRows, TicketSaleContainer, TicketSaleEndDate, TicketSaleFee, TicketSalePanelContainer, TicketSalePriceContainer, TicketSaleRow, TicketSaleSelect, TicketSaleTotal, TicketSaleTotalRow, TSPContent, TSPHeader, TSPHeaderInfo } from './TicketSalePanel.styles';
+import { TicketSaleAddons, TicketSaleAddonsHeader, TicketSaleAddonsHeaderTitle, TicketSaleAddonsIncluded, TicketSaleAddonsIncludedLabel, TicketSaleAddonsRows, TicketSaleContainer, TicketSaleEndDate, TicketSaleFee, TicketSalePanelContainer, TicketSalePriceContainer, TicketSaleRow, TicketSaleSelect, TicketSaleTotal, TicketSaleTotalRow, TSPContent, TSPHeader, TSPHeaderInfo, TSPTitle } from './TicketSalePanel.styles';
 import { v4 as uuidv4 } from 'uuid';
 
 const TicketSalePanel = ({ event }) => {
@@ -47,7 +47,7 @@ const TicketSalePanel = ({ event }) => {
                     <Typography variant="body1"> {location} </Typography>
                 </EventCardLocation>
             </TSPHeaderInfo>
-            <Typography variant="h2"> {title} </Typography>
+            <TSPTitle variant="h2"> {title} </TSPTitle>
         </TSPHeader>
         <TSPContent>
             {

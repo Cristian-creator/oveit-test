@@ -11,7 +11,7 @@ export const TicketSalePanelContainer = styled(Box)(({ theme }) => ({
 
 export const TSPHeader = styled(Box)(({ theme }) => ({
     background: theme.palette.neutralGrey2,
-    padding: '16px',
+    padding: '16px 24px',
     borderBottom: `1px solid ${theme.palette.darkGrey}`,
 }));
 
@@ -24,6 +24,10 @@ export const TSPHeaderInfo = styled(Box)(({ theme }) => ({
             marginLeft: '31px',
         },
     },
+}));
+
+export const TSPTitle = styled(Typography)(({ theme }) => ({
+    marginTop: '4px',
 }));
 
 export const TSPContent = styled(Box)(({ theme }) => ({
